@@ -19,7 +19,17 @@
           <span class="hero__logo-mark">◎</span>
           <span class="hero__logo-text">CUA</span>
         </div>
-        <nav class="hero__menu">
+        <button
+          class="hero__menu-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span class="hero__menu-toggle-bar"></span>
+        </button>
+        <nav id="primary-navigation" class="hero__menu" data-open="false">
           <a href="#" class="hero__menu-link hero__menu-link--active">Home</a>
           <a href="#solutions" class="hero__menu-link">Solutions</a>
           <a href="#process" class="hero__menu-link">Process</a>
@@ -246,7 +256,46 @@
     </footer>
 
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      const yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      const navToggle = document.querySelector('[data-menu-toggle]');
+      const navMenu = document.getElementById('primary-navigation');
+
+      if (navToggle && navMenu) {
+        const setMenuState = (expanded) => {
+          navToggle.setAttribute('aria-expanded', String(expanded));
+          navMenu.dataset.open = String(expanded);
+        };
+
+        navToggle.addEventListener('click', () => {
+          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          setMenuState(!expanded);
+        });
+
+        navMenu.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            if (window.matchMedia('(max-width: 960px)').matches) {
+              setMenuState(false);
+            }
+          });
+        });
+
+        const handleResize = () => {
+          const isDesktop = window.matchMedia('(min-width: 961px)').matches;
+          if (isDesktop) {
+            navMenu.dataset.open = 'true';
+            navToggle.setAttribute('aria-expanded', 'false');
+          } else {
+            navMenu.dataset.open = navToggle.getAttribute('aria-expanded') || 'false';
+          }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+      }
     </script>
   </body>
 </html>
