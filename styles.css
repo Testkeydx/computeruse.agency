@@ -175,6 +175,26 @@ a {
   opacity: 1;
 }
 
+.hero__menu-link--cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  opacity: 1;
+  font-weight: 600;
+  transition: background 0.2s ease, border 0.2s ease, transform 0.2s ease;
+}
+
+.hero__menu-link--cta:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -570,11 +590,6 @@ a {
     order: 2;
   }
 
-  .hero__nav .button {
-    order: 3;
-    margin-left: auto;
-  }
-
   .hero__menu {
     order: 4;
     width: 100%;
@@ -596,6 +611,12 @@ a {
     width: 100%;
     text-align: left;
     opacity: 0.9;
+  }
+
+  .hero__menu-link--cta {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.25rem;
   }
 
   .hero__menu-link:hover,
@@ -646,11 +667,6 @@ a {
 
   .hero__actions .button {
     width: 100%;
-  }
-
-  .hero__nav .button {
-    width: 100%;
-    margin-left: 0;
   }
 
   .section {
