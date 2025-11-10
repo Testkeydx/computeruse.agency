@@ -581,13 +581,18 @@ a {
 @media (max-width: 960px) {
   .hero__nav {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 1rem;
+  }
+
+  .hero__logo {
+    flex-shrink: 0;
   }
 
   .hero__menu-toggle {
     display: inline-flex;
     order: 2;
+    margin-left: auto;
   }
 
   .hero__menu {
