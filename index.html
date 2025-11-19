@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CUA</title> 
+    <title>CUA | Agents for Modern Teams</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,42 +13,46 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="hero">
-      <header class="hero__nav">
-        <div class="hero__logo">
-          <span class="hero__logo-mark">◎</span>
-          <span class="hero__logo-text">CUA</span>
-        </div>
-        <button
-          class="hero__menu-toggle"
-          type="button"
-          aria-label="Toggle navigation"
-          aria-controls="primary-navigation"
-          aria-expanded="false"
-          data-menu-toggle
+    <header class="hero__nav">
+      <div class="hero__logo">
+        <span class="hero__logo-mark">◎</span>
+        <span class="hero__logo-text">CUA</span>
+      </div>
+      <button
+        class="hero__menu-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav id="primary-navigation" class="hero__menu" data-open="false">
+        <a href="#" class="hero__menu-link hero__menu-link--active">Home</a>
+        <a href="#solutions" class="hero__menu-link">Solutions</a>
+        <a href="#process" class="hero__menu-link">Process</a>
+        <a href="#testimonials" class="hero__menu-link">Testimonials</a>
+        <a href="#login" class="hero__menu-link">Login</a>
+        <a
+          href="https://calendly.com/nick-computeruse/30min"
+          class="hero__menu-link hero__menu-link--cta"
         >
-          <span class="hero__menu-toggle-bar"></span>
-        </button>
-        <nav id="primary-navigation" class="hero__menu" data-open="false">
-          <a href="#" class="hero__menu-link hero__menu-link--active">Home</a>
-          <a href="#solutions" class="hero__menu-link">Solutions</a>
-          <a href="#process" class="hero__menu-link">Process</a>
-          <a href="#testimonials" class="hero__menu-link">Testimonials</a>
-          <a href="#login" class="hero__menu-link">Login</a>
-          <a
-            href="https://calendly.com/nick-computeruse/30min"
-            class="hero__menu-link hero__menu-link--cta"
-          >
-            Book a call
-          </a>
-        </nav>
-      </header>
+          Book a call
+        </a>
+      </nav>
+    </header>
 
+    <div class="hero">
       <main class="hero__content">
         <div class="hero__badge">Agents for modern teams</div>
         <h1 class="hero__title">We Build Your AI Employees in Seven Days or Less</h1>
         <p class="hero__subtitle">
-          If it clicks and types, we can automate it.
+          If it clicks and types, we can automate it. Purpose-built computer use agents delivered with quiet reliability.
         </p>
         <div class="hero__actions">
           <a href="https://calendly.com/nick-computeruse/30min" class="button button--primary">Book a call</a>
@@ -61,7 +65,7 @@
     </div>
 
     <main class="page">
-      <section id="capabilities" class="section section--features">
+      <section id="capabilities" class="section section--features reveal">
         <div class="section__inner">
           <div class="section__header">
             <span class="section__eyebrow">Why CUA</span>
@@ -73,8 +77,11 @@
           <div class="section__grid features__grid">
             <article class="card feature-card">
               <div class="feature-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M6 7h12M6 12h9M6 17h6" />
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="7" height="7" rx="1.5"></rect>
+                  <rect x="13" y="4" width="7" height="7" rx="1.5"></rect>
+                  <rect x="4" y="13" width="7" height="7" rx="1.5"></rect>
+                  <path d="M14 13l4 4 2-2"></path>
                 </svg>
               </div>
               <h3 class="feature-card__title">Modular playbooks</h3>
@@ -82,9 +89,10 @@
             </article>
             <article class="card feature-card">
               <div class="feature-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="7" />
-                  <path d="M12 8v8M8 12h8" />
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 5h6l3 3h5a1 1 0 011 1v10a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1z"></path>
+                  <path d="M10 2v4a1 1 0 01-1 1H5"></path>
+                  <path d="M9 13l2 3 4-5"></path>
                 </svg>
               </div>
               <h3 class="feature-card__title">Native tooling</h3>
@@ -92,9 +100,9 @@
             </article>
             <article class="card feature-card">
               <div class="feature-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 4l7 3v5c0 4-3.5 7-7 8-3.5-1-7-4-7-8V7l7-3z" />
-                  <path d="M9.5 11.5l2.5 2.5 3.5-3.5" />
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3l8 4v6c0 4.5-3.2 8.6-8 9.5-4.8-.9-8-5-8-9.5V7l8-4z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
                 </svg>
               </div>
               <h3 class="feature-card__title">Built-in guardrails</h3>
@@ -104,7 +112,7 @@
         </div>
       </section>
 
-      <section id="solutions" class="section section--solutions">
+      <section id="solutions" class="section section--solutions reveal">
         <div class="section__inner section__inner--split">
           <div class="section__header">
             <span class="section__eyebrow">Solutions</span>
@@ -130,7 +138,7 @@
         </div>
       </section>
 
-      <section id="process" class="section section--process">
+      <section id="process" class="section section--process reveal">
         <div class="section__inner">
           <div class="section__header">
             <span class="section__eyebrow">Process</span>
@@ -140,30 +148,30 @@
             </p>
           </div>
           <ol class="timeline">
-            <li class="card timeline__item">
+            <li class="timeline__item">
               <div class="timeline__badge">01</div>
-              <div>
+              <div class="timeline__content">
                 <h3>Map the work</h3>
                 <p>We observe the clicks, files, and decisions inside your workflow.</p>
               </div>
             </li>
-            <li class="card timeline__item">
+            <li class="timeline__item">
               <div class="timeline__badge">02</div>
-              <div>
+              <div class="timeline__content">
                 <h3>Prototype fast</h3>
                 <p>A sandbox agent runs live tasks within days for feedback.</p>
               </div>
             </li>
-            <li class="card timeline__item">
+            <li class="timeline__item">
               <div class="timeline__badge">03</div>
-              <div>
+              <div class="timeline__content">
                 <h3>Launch with guardrails</h3>
                 <p>Approvals, alerts, and monitoring arrive with the production cutover.</p>
               </div>
             </li>
-            <li class="card timeline__item">
+            <li class="timeline__item">
               <div class="timeline__badge">04</div>
-              <div>
+              <div class="timeline__content">
                 <h3>Evolve weekly</h3>
                 <p>Metrics steer the next release and unlock the adjacent playbook.</p>
               </div>
@@ -172,7 +180,7 @@
         </div>
       </section>
 
-      <section id="testimonials" class="section section--testimonials">
+      <section id="testimonials" class="section section--testimonials reveal">
         <div class="section__inner">
           <div class="section__header">
             <span class="section__eyebrow">Testimonials</span>
@@ -183,31 +191,31 @@
           </div>
           <div class="testimonials__grid">
             <article class="card testimonial-card">
-              <p class="testimonial-card__quote">“Close time dropped by half after our first agent.”</p>
+              <p class="testimonial-card__quote">“Automated our back-office orders entirely. AI agents handle the workflow flawlessly.”</p>
               <div class="testimonial-card__meta">
-                <span class="testimonial-card__name">Maya Chen</span>
-                <span class="testimonial-card__role">VP Finance, Lattice Labs</span>
+                <span class="testimonial-card__name">Jared Goering</span>
+                <span class="testimonial-card__role">Homeplace Ventures</span>
               </div>
             </article>
             <article class="card testimonial-card">
-              <p class="testimonial-card__quote">“Support now focuses on edge cases while agents clear the queue.”</p>
+              <p class="testimonial-card__quote">“Better than a VA for VC sourcing. Cheaper, faster, and finds deals we would have missed.”</p>
               <div class="testimonial-card__meta">
-                <span class="testimonial-card__name">Jordan Blake</span>
-                <span class="testimonial-card__role">Head of Support, Relay</span>
+                <span class="testimonial-card__name">Drake Dukes</span>
+                <span class="testimonial-card__role">Gravity</span>
               </div>
             </article>
             <article class="card testimonial-card">
-              <p class="testimonial-card__quote">“Browser automation rolled out in weeks, not quarters.”</p>
+              <p class="testimonial-card__quote">“Scaled our sales pipeline without hiring. Agents qualify and source leads automatically.”</p>
               <div class="testimonial-card__meta">
-                <span class="testimonial-card__name">Priya Patel</span>
-                <span class="testimonial-card__role">COO, Atlas Analytics</span>
+                <span class="testimonial-card__name">Manoj R</span>
+                <span class="testimonial-card__role">Taram.io</span>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="login" class="section section--login">
+      <section id="login" class="section section--login reveal">
         <div class="section__inner section__inner--compact">
           <div class="card login-card">
             <div>
@@ -222,7 +230,7 @@
         </div>
       </section>
 
-      <section id="call" class="section section--cta">
+      <section id="call" class="section section--cta reveal">
         <div class="section__inner section__inner--compact">
           <div class="card cta-card">
             <div>
@@ -261,11 +269,13 @@
     </footer>
 
     <script>
+      // Year update
       const yearEl = document.getElementById('year');
       if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
       }
 
+      // Mobile Menu
       const navToggle = document.querySelector('[data-menu-toggle]');
       const navMenu = document.getElementById('primary-navigation');
 
@@ -273,6 +283,7 @@
         const setMenuState = (expanded) => {
           navToggle.setAttribute('aria-expanded', String(expanded));
           navMenu.dataset.open = String(expanded);
+          document.body.style.overflow = expanded ? 'hidden' : '';
         };
 
         navToggle.addEventListener('click', () => {
@@ -282,26 +293,36 @@
 
         navMenu.querySelectorAll('a').forEach((link) => {
           link.addEventListener('click', () => {
-            if (window.matchMedia('(max-width: 960px)').matches) {
-              setMenuState(false);
-            }
+            setMenuState(false);
           });
         });
-
-        const handleResize = () => {
-          const isDesktop = window.matchMedia('(min-width: 961px)').matches;
-          if (isDesktop) {
-            navMenu.dataset.open = 'true';
-            navToggle.setAttribute('aria-expanded', 'false');
-          } else {
-            navMenu.dataset.open = navToggle.getAttribute('aria-expanded') || 'false';
-          }
-        };
-
-        handleResize();
-        window.addEventListener('resize', handleResize);
       }
+
+      // Scroll Reveal Animation
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      revealElements.forEach((el) => revealObserver.observe(el));
+
+      // Navbar Scroll Effect
+      const nav = document.querySelector('.hero__nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      });
     </script>
   </body>
 </html>
-
